@@ -84,7 +84,7 @@ def plot_the_corner(sliders):
   pd_full = pd.DataFrame()
   mk = ["p", "D", "v", "^", "o", "s", "*", "X"]
   for h in tqdm(['599', '666', '715', '685', '685x09', '685x095', '685x11', '685x12']):
-      df_load = pd.read_csv(f"./vintergatan_streams_catalogue/halo{h}_streams_catalogue.csv") #
+      df_load = pd.read_csv(f"./halo{h}_streams_catalogue.csv") #/vintergatan_streams_catalogue
       df = df_load[(~df_load["stellar_mass"].isna()) & (df_load["apocenter_radius"] > 0)]  
   
       masks = []
