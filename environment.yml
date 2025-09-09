@@ -1,0 +1,14 @@
+name: mybinder-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12.8
+  - pip
+  - pip:
+    - numpy==1.26.0
+    - pandas==2.2.3
+    - matplotlib==3.10.3
+    - smplotlib==0.0.9
+    - tqdm==4.67
+      
